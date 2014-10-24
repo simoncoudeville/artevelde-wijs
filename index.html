@@ -1,1 +1,596 @@
-Hello world
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Webdesign in the browser</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<script src="//use.typekit.net/zmo5gvu.js"></script>
+		<script>try{Typekit.load();}catch(e){}</script>
+
+		<!-- <link rel="stylesheet" href="http://i.icomoon.io/public/fa60c1d18c/FronteerspresSimon/style.css"> -->
+
+		<script type="text/javascript" src="http://localhost:48626/takana.js"></script>
+		<script type="text/javascript">
+		takanaClient.run({host: 'localhost:48626'});
+		</script>
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/simple.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="/img/browser.png" data-background-size="960px" >
+					<h1 class="intro-h centered">Webdesign <br> in the browser</h1>
+					<p class="centered mb0">
+						<small class="meta">Created by <a href="http://twitter.com/simoncoudeville">@simoncoudeville</a></small>
+					</p>
+					<aside class="notes">
+						Wie hier designt websites volledig in photoshop, sketch of een ander grafisch programma?
+					</aside>
+				</section>
+
+				<section>
+					<p class="centered">
+						At <a href="http://wijs.be">Wijs</a> every designer knows HTML &amp; CSS. And most of us have switched completely to designing in the browser.
+					</p>
+					<aside class="notes">
+						Bij Wijs kan elke designer HTML en CSS.
+						Voorbeelden van websites waar geen enkel layer is aan te pas gekomen.
+					</aside>
+				</section>
+
+				<section>
+					<h2 class="centered">We design rich, usable, responsive HTML pages.</h2>
+					<aside class="notes">
+						Wij leveren echte bruikbare, responsive HTML-pagina's.
+					</aside>
+				</section>
+
+				<section data-background="/img/daftpunk.jpg">
+					<p class="centered">
+						Hold it <br>
+						Turn it <br>
+						Touch it <br>
+						Click it <br>
+						Hover it <br>
+						Scroll it <br>
+						Swipe it
+					</p>
+					<aside class="notes">
+						Je kan het vasthouden, draaien, er op duwen, klikken of hoveren. Zeker naar klanten toe is dat een groot voordeel. Geef ze een link waarnaar ze kunnen surfen met een smartphone of tablet. Of geef ze gewoon een tablet met Om de 1 of andere manier zijn ze dan minder bezig met details en meer met hoe het werkt.
+    					Of bekijken ze het meer vanuit een normaal eindgebruikers-standpunt.
+					</aside>
+				</section>
+
+				<section>
+					<h2 class="centered">
+						Responsive by default
+					</h2>
+					<p class="centered">
+						Designing for different breakpoints is a lot easier.
+					</p>
+					<aside class="notes">
+						De meeste websites die we tegenwoordig maken zijn responsive.
+    					Het is het handig om de onderdelen van een website direct voor alle breakpoints aan te pakken.
+    					Je ziet direct wanneer iets niet meer werkt, leesbaar is, te groot of te klein wordt.
+					</aside>
+				</section>
+
+				<section>
+					<h2>
+						In to the flow
+					</h2>
+					<p>
+						On a webpage every element on the page influences all the elements that come after it.
+					</p>
+					<p class="fragment">
+						In photoshop...
+					</p>
+					<aside class="notes">
+						Op een HTML-pagina zit elk element in de flow van het document en oefent invloed uit op andere elementen.
+					</aside>
+				</section>
+
+				<section>
+					<code class="centered" style="font-size:75%">
+* {
+	position: absolute<span class="code-red fragment">!important;</span>
+}
+					</code>
+					<aside class="notes">
+						Is het alsof je met CSS alles op position absolute zou zetten. Met een dikke vete important erachter, helemaal onderaan in je stylesheet.
+						Zo is het dus om in photoshop te designen.
+					</aside>
+				</section>
+
+				<section>
+					<h2 class="centered">
+						Technology has moved on
+					</h2>
+					<p class="centered">
+						CSS and browsers can do everything we used to dream of.
+					</p>
+					<aside class="notes">
+						Modern browsers kunnen alles wat photoshop of sketch kan en meer. Er zijn inderdaad oudere browser die minder kunnen maar dat weten we al lang. En er zijn altijd workarounds. In deze fase speelt dat nog geen rol.
+						Wie heeft er nog the sliding door technique gebruikt om buttons met afgeronde hoekjes te maken? Dat is een goed voorbeeld waarom photoshop vroeger nodig was.
+					</aside>
+				</section>
+
+				<section>
+					<blockquote class="centered" cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+						&ldquo;Real webdesigners write code. <br>Always have, always will.&rdquo;
+					</blockquote>
+					<p class="centered">
+						<small>Jeffrey Zeldman</small>
+					</p>
+					<aside class="notes">
+						Dit is een quote van Jeffrey Zeldman. Om wat gewicht in de schaal te leggen.
+					</aside>
+				</section>
+
+				<section>
+					<h2 class="centered">
+						Webdesign = <span class="fragment">CSS</span> <span class="fragment">+ HTML</span>
+					</h2>
+					<p class="centered fragment">
+						And a bit of javascript...
+					</p>
+					<aside class="notes">
+						Uiteindelijk is CSS &amp; HTML webdesign. Hoeveel mockups je ook maakt met welke tool dan ook, ze moeten allemaal omgezet worden. En eigenlijk een voor stuk opnieuw gedesigned worden.
+						Ik deed dat sowieso al liever zelf. En uiteindelijk heb ik die stap overgeslaan.
+					</aside>
+				</section>
+
+				<section>
+					<p class="centered">
+						But Don't ask me to write a a customisable javascript slideshow like this <a href="#">reveal.js</a>.
+					</p>
+					<aside class="notes">
+						Er is nog genoeg frontend werk buiten CSS. Deze presentatie bijvoorbeeld is een knap staaltje frontend werk.
+						Maar ik was geen fan van het design. Dus heb ik het een beetje naar mijn hand gezet.
+					</aside>
+				</section>
+
+				<section>
+					<h2 class="centered">
+						Ok, but how?
+					</h2>
+					<p class="centered fragment">
+						Make your life easy.
+					</p>
+					<aside class="notes">
+						Het komt er op neer om je leven zo makkelijk mogelijk te maken
+					</aside>
+				</section>
+
+				<section>
+					<h2>
+						Preprocessors
+					</h2>
+					<ul>
+						<li class="fragment">
+							<code>@import _partial.scss</code> for maintainability
+						</li>
+						<li class="fragment">
+							<code>$variable</code> for returning settings
+						</li>
+						<li class="fragment">
+							<code>@include</code> for reusable declarations
+						</li>
+						<li class="fragment">
+							<code>%extends</code> for sharing properties
+						</li>
+						<li class="fragment">
+							&hellip;
+						</li>
+					</ul>
+
+					<aside class="notes">
+						Af en toe komen er eens zaken uit waarvan je dacht, hoe heb ik ooit zonder gekunnen? <br>
+						aparte elementen in aparte files op te delen -> onderhoudbaar <br>
+						variabelen bijhouden bij zodat je ze maar 1 keer moet aanpassen <br>
+						Gebruik includes voor terugkerende patronen, zoals een horizontale navigatie <br>
+						Extend elementen voor gedeelde properties, zoals een dropshadow <br>
+						Te veel om op te noemen maar dat zijn de voornaamste vind ik.
+					</aside>
+
+				</section>
+
+				<section>
+					<h2>
+						Working configured setup
+					</h2>
+					<ul>
+						<li class="fragment">
+							HTML boilerplate
+						</li>
+						<li class="fragment">
+							LESS/SASS files
+						</li>
+						<li class="fragment">
+							Javascript
+						</li>
+					</ul>
+					<aside class="notes">
+						Zorg er voor dat je een werkende setup als basis hebt. <br>
+						Een degelijke standaard HTML boilerplate <br>
+						Een goed ingedeelde Less/Sass structuur <br>
+						En een javascript-file waar je direct in kunt beginnen.
+
+					</aside>
+				</section>
+
+				<section>
+					<h2>
+						Build tools
+					</h2>
+					<ul>
+						<li class="fragment">
+							Compile LESS/SASS
+						</li>
+						<li class="fragment">
+							Compile HTML includes
+						</li>
+						<li class="fragment">
+							<a href="http://www.smashingmagazine.com/2014/06/11/building-with-gulp/">And a whole lot more</a>
+						</li>
+						<li class="fragment">
+							<a href="http://hammerformac.com">Hammer</a>, <a href="http://gulpjs.com/">Gulp</a>
+						</li>
+					</ul>
+					<aside class="notes">
+						Build tools zoals Hammer of Gulp zijn onmisbaar geworden. <br>
+						Ze compilen je CSS, je HTML-includes zodat je maar op 1 plaats zaken moet aanpassen. En nog zoveel meer.
+						Hammer is toegankelijker, omdat het een GUI heeft. Gulp is natuurlijk veel uitgebreider.
+					</aside>
+				</section>
+
+				<section>
+					<h2 class="centered">
+						Livereload, Browsersync
+					</h2>
+					<p class="fragment centered">
+						Or live edit with <a href="http://usetakana.com/">takana</a>.
+					</p>
+					<aside class="notes">
+						Zeker in samenwerking met Livereload en browsersync. <br>
+						Takana update je CSS terwijl je typt. Straks een demo
+
+					</aside>
+				</section>
+
+				<section>
+					<p class="centered">
+						Make sure all this works and keep improving it. Make your workflow as easy as possible. So you just have to start it up and start designing.
+					</h2>
+					<p class="fragment centered">
+						Don't know how? Ask someone who does, like a frontend-developer. Figure it out together.
+					</p>
+					<aside class="notes">
+						Zorg ervoor dat je daar niet meer moet over nadenken. Clone of download de laatste versie.
+						Start het op en begin met designen. <br> Als je niet weet hoe? Vraag het iemand of maak het samen. Bijvoorbeeld met een frontend-dev. Ik ben daar zelf ook niet zo goed in. Maar eens het werkt is het geweldig.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Frameworks?</h2>
+					<p class="fragment">Use pieces of other frameworks that work good. Don't reinvent the wheel.</p>
+					<p class="fragment">Every project is a custom framework of it's own.</p>
+					<p class="fragment">Save and reuse snippets, patterns, scripts from other projects.</p>
+
+					<aside class="notes">
+						Ik ben geen fan van uitgebreide frameworks zoals bootstrap of Zurb. Sommige zaken zijn superhandig zoals de javascript.
+						Modals, dropdowns, enzovoort, superhandig. Het zou dom zijn om daar geen gebruik van te maken. Maar design-stuff zoals typography, margins, breakpoints doe je best zelf. Elk project is z'n eigen framework.
+						We zijn zelf slim genoeg om eigen handige snippets, patronen en scripts te schrijven. Spaar ze en hergebruik ze.
+					</aside>
+				</section>
+
+				<section>
+					<h2 class="centered">
+						Design workflow
+					</h2>
+					<aside class="notes">
+						Voila, eens dat dit allemaal goed werkt kan je beginnen designen.
+					</aside>
+				</section>
+
+				<section>
+					<h3 class="centered">Define the basic stuff</h3>
+
+					<aside class="notes">
+						Begin met de basis.
+					</aside>
+
+				</section>
+
+				<section>
+					<section>
+						<p class="centered">Colors</p>
+						<p class="centered">Typography</p>
+						<p class="centered">Margins</p>
+						<p class="centered">Gridgutters</p>
+
+						<aside class="notes">
+							Zaken zoals kleuren, typography, margins, het grid. Maak dit zo gemakkelijk mogelijk. Zodat je het later goed kan hergebruiken.
+						</aside>
+					</section>
+
+					<section data-transition="linear">
+						<h3 class="centered">Building a color palette</h3>
+					</section>
+
+					<section>
+						<code style="font-size:75%">
+$alpha-color: #22313F; <br>
+$alpha-bg-color: hsl(hue($alpha-color),20,15); <br>
+$alpha-text-color: hsl(hue($alpha-color),10,60); <br>
+$beta-text-color: hsl(hue($alpha-color),10,80); <br>
+						</code>
+
+						<aside class="notes">
+							Elk project heeft een aantal basiskleuren.
+							Op basis van die kleuren, tekstkleur, achtergrondkleuren bepalen die bij elkaar aansluiten met kleurfuncties. De HSL functie is super.
+							In je settings.scss kan je zo een kleurenpalet bouwen.
+						</aside>
+
+					</section>
+
+				</section>
+
+
+				<section>
+					<blockquote class="centered" cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+						&ldquo;We’re not designing pages, we’re designing systems of components.&rdquo;
+					</blockquote>
+					<p class="centered">
+						<small>Stephen Hay</small>
+					</p>
+
+					<aside class="notes">
+						Daarna kan je gaan kijken naar veelvoorkomende componenten. puzelstukjes die samen passen. Die vormen samen een design systeem.
+						In plaats van pagina's ontwerpen we een design systeem met allerlei componenten, puzelstukjes die samen passen.
+					</aside>
+
+				</section>
+
+				<section>
+					<p class="centered">
+						<a href="http://bradfrostweb.com/blog/post/atomic-web-design/">Atomic design</a> by Brad Frost
+					</p>
+					<aside class="notes">
+						Brad Frost vat het mooi samen in zijn artikel atomic design.
+					</aside>
+				</section>
+
+				<section>
+					<p class="centered">Input fields</p>
+					<p class="centered">buttons</p>
+					<p class="centered">Media-types</p>
+					<p class="centered">&hellip;</p>
+
+					<aside class="notes">
+						En alles wat veel voorkomt in een project.
+						1 van de eerste dingen die ik voor delijn.be ontworpen heb zijn de lijstjes. Dit komt zo veel voor op de site dat het logisch is om dat eerst te doen. Header en navigatie gingen wel in orde komen dacht ik.
+					</aside>
+
+				</section>
+
+				<section>
+					<h3 class="centered">
+						Now if you start combining elements, <br>they will allready look good.
+					</h3>
+					<aside class="notes">
+						En als je nu elementen begint toe te passen op pagina's zien ze er al goed uit. Dan kan je beginnen verfijnen.
+					</aside>
+				</section>
+
+				<section>
+					<h2>
+						Modules
+					</h2>
+					<p class="fragment">
+						I like to start with the header, logo, navigation, searchbar and the doormat. The stuff that's the same for most pages.
+					</p>
+					<p class="fragment">
+						Every part for the necessary breakpoints.
+					</p>
+					<aside class="notes">
+						Ik start dan graag met de header, logo, navigatie, search en bijvoorbeeld de doormat. Eigenlijk de zaken die voor alle pagina's hetzelfde zijn.
+					</aside>
+				</section>
+
+				<section>
+					<h2 class="centered">Grid systems for quickly creating responsive layouts.</h2>
+					<aside class="notes">
+						Een uitgebreid grid systeem is handig om snel layoutmogelijkheden te verkennen.
+					</aside>
+				</section>
+
+				<section>
+					<code style="font-size:75%">
+						&lt;article class="medium-6 large-3 col">&hellip; <br>
+						&lt;article class="medium-6 large-3 col">&hellip; <br>
+						&lt;article class="medium-6 large-3 col">&hellip; <br>
+						&lt;article class="medium-6 large-3 col">&hellip;
+					</code>
+
+					<aside class="notes">
+						Ik gebruik graag voorgedefineerde classes. Als die niet volstaan kan je er altijd bijmaken of zelf meer
+					</aside>
+
+				</section>
+
+				<section>
+					<h2 class="centered">
+						Design experiments
+					</h2>
+					<aside class="notes">
+						Wat ik vroeger deed was een stuk van de interface ontwerpen, zoals de header/navigatie/zoekbalk. Dit zat dan in verschillende layers en layer groups
+						Als ik content was daarvan, een kopie maken en nog eens iets anders proberen.
+					</aside>
+				</section>
+
+				<section>
+					<h2 class="centered">
+						Layers &amp; layer groups
+					</h2>
+					<aside class="notes">
+						Wat ik vroeger deed was een stuk van de interface ontwerpen, zoals de header/navigatie/zoekbalk. Dit zat dan in verschillende layers en layer groups
+						Als ik content was daarvan, een kopie maken en nog eens iets anders proberen.
+					</aside>
+				</section>
+
+				<section>
+					<h3 class="centered">
+						_partial.scss = layer group
+					</h3>
+					<p class="centered">Use comments to toggle visisbility</p>
+
+					<aside class="notes">
+						Je kan een partial die je inlaad in de globale CSS, zien als een layer group.
+					</aside>
+
+				</section>
+
+				<section>
+					<code style="font-size:65%; line-height:1em;">
+<span class="comment"><span class="icon icon-invisible"></span> // @import "modules/header"; </span><br>
+<span class="icon icon-visible"></span> @import "modules/header-2"; <br>
+<span class="icon icon-visible"></span> @import "modules/header-search"; <br>
+<span class="icon icon-visible"></span> @import "modules/breadcrumb"; <br>
+<span class="comment"><span class="icon icon-invisible"></span> // @import "modules/breadcrumb-2"; </span><br>
+<span class="comment"><span class="icon icon-invisible"></span> // @import "modules/site-nav"; </span><br>
+<span class="icon icon-visible"></span> @import "modules/site-nav-2"; <br>
+<span class="comment"><span class="icon icon-invisible"></span> // @import "modules/search"; </span><br>
+<span class="comment"><span class="icon icon-invisible"></span> // @import "modules/search-2"; </span><br>
+<span class="icon icon-visible"></span> @import "modules/search-3"; <br>
+					</code>
+					<aside class="notes">
+						Hierin staan de verschillende modules. En eigenlijk kan je die bekijken als layer-groups.
+						En ik doe nu eigenlijk juist hetzelfde. Ik design een module in een aparte scss file. En daarvan maak ik kopies en alternatieve versies.
+						Degene in comments zijn niet zichtbaar. Zo kan je ook heel makkelijk switchen.
+					</aside>
+				</section>
+
+				<section>
+					<code style="font-size:65%; line-height:1em;">
+<span class="icon icon-visible"></span> @import "modules/header";<br>
+<span class="comment"><span class="icon icon-invisible"></span> // @import "modules/header-2";</span> <br>
+<span class="icon icon-visible"></span> @import "modules/header-search"; <br>
+<span class="icon icon-visible"></span> @import "modules/breadcrumb"; <br>
+<span class="comment"><span class="icon icon-invisible"></span> // @import "modules/breadcrumb-2"; </span><br>
+<span class="comment"><span class="icon icon-invisible"></span> // @import "modules/site-nav"; </span><br>
+<span class="icon icon-visible"></span> @import "modules/site-nav-2"; <br>
+<span class="comment"><span class="icon icon-invisible"></span> // @import "modules/search"; </span><br>
+<span class="comment"><span class="icon icon-invisible"></span> // @import "modules/search-2"; </span><br>
+<span class="icon icon-visible"></span> @import "modules/search-3"; <br>
+					</code>
+					<aside class="notes">
+						Hierin staan de verschillende modules. En eigenlijk kan je die bekijken als layer-groups.
+						En ik doe nu eigenlijk juist hetzelfde. Ik design een module in een aparte scss file. En daarvan maak ik kopies en alternatieve versies.
+						Degene in comments zijn niet zichtbaar. Zo kan je makkelijk switchen.
+					</aside>
+				</section>
+
+				<section>
+					<h2 class="centered">
+						Code refactoring
+					</h2>
+					<p class="centered">
+						After a while you could end up with a lot of unused code, comments. Refactoring it is a big part oft the process.
+					</p>
+					<p class="centered fragment">
+						<small>Just like you would do with a bloated photshop file.</small>
+					</p>
+				</section>
+
+				<section>
+					<p class="centered">
+						In the end it's all about efficiency. I want to spend as much time as possible designing real stuff.
+					</p>
+					<aside class="notes">
+						Voor mij gaat het vooral over efficiëntie. En daarmee bedoel ik niet om sneller gedaan te hebben. Ik wil zo veel mogelijk tijd spenderen aan het echte design werk.
+					</aside>
+				</section>
+
+				<section class="centered">
+					<h1>The end</h1>
+					<small class="meta">Created by <a href="http://twitter.com/simoncoudeville">@simoncoudeville</a></small>
+
+					<aside class="notes">
+						Voila, hopelijk vonden jullie het interessant. Zijn er nog vragen, opmerkingen, vervloekingen?
+					</aside>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
