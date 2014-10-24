@@ -20,9 +20,6 @@
 		<link rel="stylesheet" href="css/reveal.min.css">
 		<link rel="stylesheet" href="css/theme/simple.css" id="theme">
 
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
-
 		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
 		<script>
 			if( window.location.search.match( /print-pdf/gi ) ) {
@@ -66,7 +63,7 @@
 				</section>
 
 				<section>
-					<h2 class="centered">We design rich, usable, responsive HTML pages.</h2>
+					<h2 class="centered">We design rich, usable, <br>responsive HTML pages.</h2>
 					<aside class="notes">
 						Wij leveren echte bruikbare, responsive HTML-pagina's.
 					</aside>
@@ -210,7 +207,6 @@
 							&hellip;
 						</li>
 					</ul>
-
 					<aside class="notes">
 						Af en toe komen er eens zaken uit waarvan je dacht, hoe heb ik ooit zonder gekunnen? <br>
 						aparte elementen in aparte files op te delen -> onderhoudbaar <br>
@@ -219,7 +215,6 @@
 						Extend elementen voor gedeelde properties, zoals een dropshadow <br>
 						Te veel om op te noemen maar dat zijn de voornaamste vind ik.
 					</aside>
-
 				</section>
 
 				<section>
@@ -303,7 +298,6 @@
 					<p class="fragment">Use pieces of other frameworks that work good. Don't reinvent the wheel.</p>
 					<p class="fragment">Every project is a custom framework of it's own.</p>
 					<p class="fragment">Save and reuse snippets, patterns, scripts from other projects.</p>
-
 					<aside class="notes">
 						Ik ben geen fan van uitgebreide frameworks zoals bootstrap of Zurb. Sommige zaken zijn superhandig zoals de javascript.
 						Modals, dropdowns, enzovoort, superhandig. Het zou dom zijn om daar geen gebruik van te maken. Maar design-stuff zoals typography, margins, breakpoints doe je best zelf. Elk project is z'n eigen framework.
@@ -322,47 +316,38 @@
 
 				<section>
 					<h3 class="centered">Define the basic stuff</h3>
-
 					<aside class="notes">
 						Begin met de basis.
 					</aside>
-
 				</section>
 
 				<section>
-					<section>
-						<p class="centered">Colors</p>
-						<p class="centered">Typography</p>
-						<p class="centered">Margins</p>
-						<p class="centered">Gridgutters</p>
+					<p class="centered">Colors</p>
+					<p class="centered">Typography</p>
+					<p class="centered">Margins</p>
+					<p class="centered">Gridgutters</p>
+					<aside class="notes">
+						Zaken zoals kleuren, typography, margins, het grid. Maak dit zo gemakkelijk mogelijk. Zodat je het later goed kan hergebruiken.
+					</aside>
+				</section>
 
-						<aside class="notes">
-							Zaken zoals kleuren, typography, margins, het grid. Maak dit zo gemakkelijk mogelijk. Zodat je het later goed kan hergebruiken.
-						</aside>
-					</section>
+				<section data-transition="linear">
+					<h3 class="centered">Building a color palette</h3>
+				</section>
 
-					<section data-transition="linear">
-						<h3 class="centered">Building a color palette</h3>
-					</section>
-
-					<section>
-						<code style="font-size:75%">
+				<section>
+					<code style="font-size:75%">
 $alpha-color: #22313F; <br>
 $alpha-bg-color: hsl(hue($alpha-color),20,15); <br>
 $alpha-text-color: hsl(hue($alpha-color),10,60); <br>
 $beta-text-color: hsl(hue($alpha-color),10,80); <br>
-						</code>
-
-						<aside class="notes">
-							Elk project heeft een aantal basiskleuren.
-							Op basis van die kleuren, tekstkleur, achtergrondkleuren bepalen die bij elkaar aansluiten met kleurfuncties. De HSL functie is super.
-							In je settings.scss kan je zo een kleurenpalet bouwen.
-						</aside>
-
-					</section>
-
+					</code>
+					<aside class="notes">
+						Elk project heeft een aantal basiskleuren.
+						Op basis van die kleuren, tekstkleur, achtergrondkleuren bepalen die bij elkaar aansluiten met kleurfuncties. De HSL functie is super.
+						In je settings.scss kan je zo een kleurenpalet bouwen.
+					</aside>
 				</section>
-
 
 				<section>
 					<blockquote class="centered" cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
@@ -371,12 +356,10 @@ $beta-text-color: hsl(hue($alpha-color),10,80); <br>
 					<p class="centered">
 						<small>Stephen Hay</small>
 					</p>
-
 					<aside class="notes">
 						Daarna kan je gaan kijken naar veelvoorkomende componenten. puzelstukjes die samen passen. Die vormen samen een design systeem.
 						In plaats van pagina's ontwerpen we een design systeem met allerlei componenten, puzelstukjes die samen passen.
 					</aside>
-
 				</section>
 
 				<section>
@@ -393,12 +376,10 @@ $beta-text-color: hsl(hue($alpha-color),10,80); <br>
 					<p class="centered">buttons</p>
 					<p class="centered">Media-types</p>
 					<p class="centered">&hellip;</p>
-
 					<aside class="notes">
 						En alles wat veel voorkomt in een project.
 						1 van de eerste dingen die ik voor delijn.be ontworpen heb zijn de lijstjes. Dit komt zo veel voor op de site dat het logisch is om dat eerst te doen. Header en navigatie gingen wel in orde komen dacht ik.
 					</aside>
-
 				</section>
 
 				<section>
@@ -439,11 +420,9 @@ $beta-text-color: hsl(hue($alpha-color),10,80); <br>
 						&lt;article class="medium-6 large-3 col">&hellip; <br>
 						&lt;article class="medium-6 large-3 col">&hellip;
 					</code>
-
 					<aside class="notes">
 						Ik gebruik graag voorgedefineerde classes. Als die niet volstaan kan je er altijd bijmaken of zelf meer
 					</aside>
-
 				</section>
 
 				<section>
@@ -471,11 +450,9 @@ $beta-text-color: hsl(hue($alpha-color),10,80); <br>
 						_partial.scss = layer group
 					</h3>
 					<p class="centered">Use comments to toggle visisbility</p>
-
 					<aside class="notes">
 						Je kan een partial die je inlaad in de globale CSS, zien als een layer group.
 					</aside>
-
 				</section>
 
 				<section>
